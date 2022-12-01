@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Kalkulator funkcji kwadraatowej</title>
+</head>
+<body>
+
+    <div class="tablica">
+        <div class="kreda"></div>
+
+        <div class="funkcjaK">
+            <form>
+                <p>f(x) =</p>
+                <input type="text" placeholder="a" id="wspolczynnikA" required>
+                <p>x<sup>2</sup> +</p>
+                <input type="text" placeholder="b" id="wspolczynnikB" required>
+                <p>x +</p>
+                <input type="text" placeholder="c" id="wspolczynnikC" required>
+            </form>
+            <button class="oblicz">Oblicz</button>
+        </div>
+
+        <div class="wyniki">
+            <div class="wynikiElement" id="postacO">
+                <p class="wynikiNaglowek">Postać ogólna funkcji</p>
+            </div>
+            <div class="wynikiElement" id="postacK">
+                <p class="wynikiNaglowek">Postać kanoniczna funkcji</p>
+            </div>
+            <div class="wynikiElement" id="postacI">
+                <p class="wynikiNaglowek">Postać iloczynowa funkcji</p>
+            </div>
+            <div class="wynikiElement" id="delta">
+                <p class="wynikiNaglowek">Delta</p>
+            </div>
+            <div class="wynikiElement" id="mZerowe">
+                <p class="wynikiNaglowek">Miejsca zerowe funkcji</p>
+            </div>
+            <div class="wynikiElement" id="wierzcholek">
+                <p class="wynikiNaglowek">Wierzchołek funckji</p>
+            </div>
+            <div class="wynikiElement" id="oy">
+                <p class="wynikiNaglowek">Miejsce przecięcia z osią OY</p>
+            </div>
+
+            <div class="wroc">
+                <button class="wrocPrzycisk">Wróć</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>

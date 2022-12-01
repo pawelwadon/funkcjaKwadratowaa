@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Walter+Turncoat);
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+body {
+    background: linear-gradient(90deg, #485563 10%, #29323c 90%);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.tablica{
+    color: #E8E8E8;
+    min-width: 80%;
+    min-height: 80%;
+    background-color: #497959;
+    padding: 30px 0;
+    border-radius: 10px;
+    border: 15px solid #B78240;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-shadow: -1px 2px 2px 0px #555, inset 0 0 10px 0 #555;
+}
+
+.tablica .kreda{
+    position: absolute;
+    border-radius: 2px;
+    min-width: 50px;
+    min-height: 7px;
+    background: #f1f1f1;
+    bottom: 2px;
+    right: 15px;
+    box-shadow: inset 0 -4px 1px rgba(0, 0, 0, 0.3), -1px -1px 1px rgba(0, 0, 0, 0.2), 0 2px 0 rgba(0, 0, 0, 0.3)
+}
+
+
+/* karta display  */
+.funkcjaK{
+    min-height: 70vh;
+    min-width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition:transform .4s ease-out;
+    transform: rotateY(0deg);
+    backface-visibility: hidden;
+}
+
+.funkcjaK form{
+    min-width: auto;
+    min-height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 10px;
+    padding: 0 15px;
+}
+
+.funkcjaK form p{
+    font-family: "Walter Turncoat", cursive;
+    font-size: 45px;
+}
+
+.funkcjaK form sup{
+    font-family: "Walter Turncoat", cursive;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.funkcjaK form input{
+    width: auto;
+    height: 35px;
+    text-align: center;
+    border-radius: 10px;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    font-family: "Walter Turncoat";
+    color: #f1f1f1 ;
+    background-color:#497959 ;
+    font-weight: bold;
+    box-shadow:  0 1px 3px rgba(0, 0, 0, .2);
+}
+
+.funkcjaK .oblicz{
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 35px;
+    outline: none;
+    width: 150px;
+    text-transform: uppercase;
+    font-size: 20px;
+    height: 55px;
+    border: none;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: ease-in-out .2s;
+}
+
+.funkcjaK .oblicz:hover{
+    scale: 1.1;
+    background-color: rgba(255, 255, 255, 0.7);
+    transition: ease-in-out .2s;
+    letter-spacing: 2px;
+}
+
+/* karta wyników  */
+.wyniki{
+    min-height: 70vh;
+    max-height: 70vh;
+    min-width: 600px;
+    max-width: 600px;
+    border-radius: 15px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .2);
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+    position: absolute;
+    transition:transform .4s ease-out;
+    transform: rotateY(180deg);
+}
+
+.wyniki .wynikiElement{
+    width: 100%;
+    padding-bottom: 15px;   
+}
+
+.wynikiObl{
+    padding: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+    font-family: "Walter Turncoat", cursive;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.wyniki .wynikiElement .wynikiNaglowek{
+    padding-bottom: 10px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.wrocPrzycisk{
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 35px;
+    outline: none;
+    width: 150px;
+    text-transform: uppercase;
+    font-size: 20px;
+    height: 55px;
+    border: none;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: ease-in-out .2s;
+}
+
+.wrocPrzycisk:hover{
+    scale: 1.1;
+    background-color: rgba(255, 255, 255, 0.7);
+    transition: ease-in-out .2s;
+    letter-spacing: 2px;
+}
