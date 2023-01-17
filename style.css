@@ -54,7 +54,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    transition:transform .4s ease-out;
+    transition:transform .6s ease-out;
     transform: rotateY(0deg);
     backface-visibility: hidden;
 }
@@ -109,7 +109,6 @@ body {
     border: none;
     outline: none;
     background-color: rgba(255, 255, 255, 0.5);
-    transition: ease-in-out .2s;
 }
 
 .funkcjaK .oblicz:hover{
@@ -135,7 +134,7 @@ body {
     align-items: center;
     backface-visibility: hidden;
     position: absolute;
-    transition:transform .4s ease-out;
+    transition:transform .6s ease-out;
     transform: rotateY(180deg);
 }
 
@@ -171,7 +170,6 @@ body {
     border: none;
     outline: none;
     background-color: rgba(255, 255, 255, 0.5);
-    transition: ease-in-out .2s;
 }
 
 .wrocPrzycisk:hover{
@@ -179,4 +177,13 @@ body {
     background-color: rgba(255, 255, 255, 0.7);
     transition: ease-in-out .2s;
     letter-spacing: 2px;
+}
+
+.wroc{
+    padding: 10px 0;
+}
+
+[data-simplebar]{
+    overflow-y: overlay;
+    margin: 6px 0;
 }
