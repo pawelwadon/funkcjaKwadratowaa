@@ -108,6 +108,7 @@ function wroc(){
     document.querySelector('.funkcjaK').style.transform = 'rotateY(0deg)';
     document.querySelector('.wyniki').style.transform = 'rotateY(180deg)';
 
+    usun()
 
 };
 
